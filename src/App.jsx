@@ -15,7 +15,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <div className="max-w-screen max-h-screen">
+      <div className="w-screen max-h-screen">
         <Carousel>
           {sliderImages.map((item, index) => (
             <img src={item.img} key={index} className="max-h-screen"></img>
