@@ -28,7 +28,7 @@ const Contacto = () => {
   };
 
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col justify-center">
       <div className="max-w-xl mt-5 text-center">
         <h2 className="font-semibold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
           CONTACTO
