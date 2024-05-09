@@ -1,7 +1,7 @@
 const Business = () => (
   <section
     id="features"
-    className=" mt-24 relative min-h-72 flex items-center justify-center"
+    className="w-screen mt-24 relative min-h-72 flex items-center justify-center"
   >
     <div className="absolute inset-0 flex items-center justify-center">
       <div className="text-center">
