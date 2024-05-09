@@ -60,8 +60,8 @@ export default function Clients() {
       </h2>
       <Slider {...settings} style={{ pointerEvents: "none" }}>
         {imagenes.map((imagen, index) => (
-          <div key={index} className="w-full">
-            <img src={imagen.src} alt={imagen.alt} className="w-full"/>
+          <div key={index}>
+            <img src={imagen.src} alt={imagen.alt}/>
           </div>
         ))}
       </Slider>
