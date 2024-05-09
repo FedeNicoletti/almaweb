@@ -24,13 +24,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className="w-full fixed top-0 left-0 right-0 z-50 py-2"
+      className="w-full fixed top-0 left-0 right-0 z-50 py-0"
       style={{ backgroundColor: navbarBackground }}
     >
       <div className="container px-4 mx-auto relative text-sm">
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
-            <img className="h-30 w-40 mr-2" src={logo} alt="logoalma" />
+            <img className="h-20 w-20 mr-2" src={logo} alt="logoalma" />
           </div>
           <ul className="hidden lg:flex ml-14 space-x-12 text-white">
             {navItems.map((item, index) => (
