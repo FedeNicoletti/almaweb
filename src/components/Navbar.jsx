@@ -54,7 +54,7 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
-          <div className="lg:hidden md:flex flex-col justify-end mr-2">
+          <div className="w-screen lg:hidden md:flex flex-col justify-end mr-2">
             <button onClick={toggleNavbar} className="mr-4">
               {mobileDrawerOpen ? <X /> : <Menu />}
             </button>
