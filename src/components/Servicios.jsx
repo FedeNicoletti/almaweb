@@ -10,7 +10,7 @@ const FeatureCard = ({ icon, title, content }) => (
       />
     </div>
     <div className="flex flex-col items-center">
-      <h4 className="font-semibold text-lg md:text-xl mb-2 text-[#303030]">
+      <h4 className="font-semibold text-lg text-center md:text-xl mb-2 text-[#303030]">
         {title}
       </h4>
       <p className="text-center font-normal text-base md:text-lg text-[#595959]">
