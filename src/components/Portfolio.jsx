@@ -30,7 +30,7 @@ export default function Portfolio() {
             <p className="text-base md:text-lg">Todos</p>
           </button>
           <button
-            className={`text-white rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
+            className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
               filtro === "Arquitectura y Diseño Comercial"
                 ? "text-pink-500"
                 : "text-gray-600"
@@ -42,7 +42,7 @@ export default function Portfolio() {
             </p>
           </button>
           <button
-            className={`text-white rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
+            className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
               filtro === "Acciones BTL y Eventos"
                 ? "text-pink-500"
                 : "text-gray-600"
@@ -52,7 +52,7 @@ export default function Portfolio() {
             <p className="text-base md:text-lg">Acciones BTL y Eventos</p>
           </button>
           <button
-            className={`text-white rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
+            className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
               filtro === "Trade Marketing" ? "text-pink-500" : "text-gray-600"
             }`}
             onClick={() => handleClick("Trade Marketing")}
@@ -60,7 +60,7 @@ export default function Portfolio() {
             <p className="text-base md:text-lg">Trade Marketing</p>
           </button>
           <button
-            className={`text-white rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
+            className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
               filtro === "Producción y Logistica"
                 ? "text-pink-500"
                 : "text-gray-600"
@@ -70,7 +70,7 @@ export default function Portfolio() {
             <p className="text-base md:text-lg">Producción y Logística</p>
           </button>
           <button
-            className={`text-white rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
+            className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
               filtro === "Recursos Humanos" ? "text-pink-500" : "text-gray-600"
             }`}
             onClick={() => handleClick("Recursos Humanos")}
