@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className="container px-4 mx-auto relative text-sm">
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
-            <img className="h-20 w-20 mr-2" src={logo} alt="logoalma" />
+            <img className="h-20 w-20 mr-2 object-cover" src={logo} alt="logoalma" />
           </div>
           <ul className="hidden lg:flex ml-14 space-x-12 text-white">
             {navItems.map((item, index) => (
