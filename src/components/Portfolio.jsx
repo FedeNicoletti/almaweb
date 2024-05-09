@@ -61,7 +61,7 @@ export default function Portfolio() {
           </button>
           <button
             className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
-              filtro === "Producción y Logistica"
+              filtro === "Producción y Logística"
                 ? "text-pink-500"
                 : "text-gray-600"
             }`}
