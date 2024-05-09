@@ -27,7 +27,7 @@ const Contacto = () => {
     });
   };
 
-  return (<></><div className="max-w-xl mt-5 text-center">
+  return (<div className="w-full flex flex-col"><div className="max-w-xl mt-5 text-center">
       <h2 className="font-semibold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
         AGENCIA
       </h2></div>
@@ -117,7 +117,7 @@ const Contacto = () => {
         </div>
       </div>
     </section>
-        </>
+        </div>
   );
 };
 
