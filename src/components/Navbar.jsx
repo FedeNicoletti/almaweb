@@ -54,14 +54,14 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
-          <div className="w-screen lg:hidden md:flex flex-col justify-end mr-2">
+          <div className=" lg:hidden md:flex flex-col justify-end mr-2">
             <button onClick={toggleNavbar} className="mr-4">
               {mobileDrawerOpen ? <X /> : <Menu />}
             </button>
           </div>
         </div>
         {mobileDrawerOpen && (
-          <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
+          <div className="w-screen fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
             <ul className="text-white">
               {navItems.map((item, index) => (
                 <li key={index} className="py-4">
