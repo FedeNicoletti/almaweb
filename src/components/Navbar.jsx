@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="w-screen fixed top-0 left-0 right-0 z-50 py-4"
+      className="w-full fixed top-0 left-0 right-0 z-50 py-4"
       style={{ backgroundColor: navbarBackground }}
     >
       <div className="container px-4 mx-auto relative text-sm">
@@ -61,7 +61,7 @@ const Navbar = () => {
           </div>
         </div>
         {mobileDrawerOpen && (
-          <div className="fixed right-0 z-20 bg-neutral-900 w-screen p-12 flex flex-col justify-center items-center lg:hidden">
+          <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
             <ul className="text-white">
               {navItems.map((item, index) => (
                 <li key={index} className="py-4">
