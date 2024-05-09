@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="w-full fixed top-0 left-0 right-0 z-50 py-4"
+      className="w-full fixed top-0 left-0 right-0 z-50 py-2"
       style={{ backgroundColor: navbarBackground }}
     >
       <div className="container px-4 mx-auto relative text-sm">
