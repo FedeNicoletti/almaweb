@@ -33,7 +33,7 @@ const Contacto = () => {
       className="w-screen mt-8 md:mt-24 flex flex-col md:flex-row items-center"
     ><div className="max-w-xl mt-5 text-center">
       <h2 className="font-semibold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
-        AGENCIA
+        CONTACTO
       </h2> </div>
       <div className="w-full md:w-1/2 flex justify-center items-center py-8">
         <p className="text-center md:text-lg">
