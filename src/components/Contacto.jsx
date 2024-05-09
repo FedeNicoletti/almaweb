@@ -30,7 +30,7 @@ const Contacto = () => {
   return (
     <section
       id="features"
-      className="mt-8 md:mt-24 flex flex-col md:flex-row items-center"
+      className="w-screen mt-8 md:mt-24 flex flex-col md:flex-row items-center"
     >
       <div className="w-full md:w-1/2 flex justify-center items-center py-8">
         <p className="text-center md:text-lg">
