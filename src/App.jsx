@@ -13,7 +13,7 @@ import Contacto from "./components/Contacto";
 
 const App = () => {
   return (
-    <>
+    <div className="w-full overflow-hidden>
       <Navbar />
       <div className="w-screen max-h-screen">
         <Carousel>
@@ -31,7 +31,7 @@ const App = () => {
       <Business2 />
       <Partners />
       <Contacto />
-    </>
+    </div>
   );
 };
 
