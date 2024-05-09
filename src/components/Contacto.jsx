@@ -27,18 +27,17 @@ const Contacto = () => {
     });
   };
 
-              return (
-  <div className="w-full flex flex-col">
-    <div className="max-w-xl mt-5 text-center">
-      <h2 className="font-semibold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
-        AGENCIA
-      </h2>
-    </div>
-    <section
-      id="features"
-      className="w-screen mt-8 md:mt-24 flex flex-col md:flex-row items-center"
-    >
+  return (
+    <div className="w-full flex flex-col">
       <div className="max-w-xl mt-5 text-center">
+        <h2 className="font-semibold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
+          CONTACTO
+        </h2>
+      </div>
+      <section
+        id="features"
+        className="w-screen mt-8 md:mt-24 flex flex-col md:flex-row items-center"
+      >
         <div className="w-full md:w-1/2 flex justify-center items-center py-8">
           <p className="text-center md:text-lg">
             Completá el siguiente formulario y dejanos tu consulta. En breve nos
@@ -53,61 +52,55 @@ const Contacto = () => {
         <div className="w-full md:w-1/2 p-8">
           <div className="max-w-xl mx-auto">
             <form onSubmit={handleSubmit} className="mt-8">
-              <div className="flex flex-wrap -mx-3 mb-6">
-                <div className="w-full px-3">
-                  <label
-                    className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                    htmlFor="name"
-                  >
-                    Nombre
-                  </label>
-                  <input
-                    className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                    id="name"
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
+              <div className="mb-6">
+                <label
+                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  htmlFor="name"
+                >
+                  Nombre
+                </label>
+                <input
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  id="name"
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
               </div>
-              <div className="flex flex-wrap -mx-3 mb-6">
-                <div className="w-full px-3">
-                  <label
-                    className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                    htmlFor="email"
-                  >
-                    Email
-                  </label>
-                  <input
-                    className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                    id="email"
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
+              <div className="mb-6">
+                <label
+                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  htmlFor="email"
+                >
+                  Email
+                </label>
+                <input
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  id="email"
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
               </div>
-              <div className="flex flex-wrap -mx-3 mb-6">
-                <div className="w-full px-3">
-                  <label
-                    className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                    htmlFor="message"
-                  >
-                    Mensaje
-                  </label>
-                  <textarea
-                    className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
+              <div className="mb-6">
+                <label
+                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  htmlFor="message"
+                >
+                  Mensaje
+                </label>
+                <textarea
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                />
               </div>
               <div className="flex items-center justify-center">
                 <button
@@ -120,7 +113,9 @@ const Contacto = () => {
             </form>
           </div>
         </div>
-      </div>
-    </section>
-  </div>
-);
+      </section>
+    </div>
+  );
+};
+
+export default Contacto;
