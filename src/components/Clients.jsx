@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -33,13 +32,6 @@ import {
   image28,
   image29,
   image30,
-  image31,
-  image32,
-  image33,
-  image34,
-  image35,
-  image36,
-  image37,
 } from "../assets";
 
 export default function Clients() {
@@ -114,7 +106,12 @@ export default function Clients() {
       <Slider {...settings} style={{ pointerEvents: "none" }}>
         {imagenes.map((imagen, index) => (
           <div key={index} className="w-full">
-            <img src={imagen.src} alt={imagen.alt} className="w-full" />
+            <img
+              src={imagen.src}
+              alt={imagen.alt}
+              className="w-full"
+              style={{ background: "transparent !important" }}
+            />
           </div>
         ))}
       </Slider>
