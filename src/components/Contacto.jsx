@@ -30,7 +30,7 @@ const Contacto = () => {
   return (
     <div className="w-full flex flex-col justify-center">
       <div className="w-full flex justify-center mt-5 text-center">
-        <h2 className="font-semibold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
+        <h2 className="font-bold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
           CONTACTO
         </h2>
       </div>
@@ -43,7 +43,8 @@ const Contacto = () => {
             Completá el siguiente formulario y dejanos tu consulta. En breve nos
             comunicaremos con vos. <br /> Nuestra Agencia:
             <br /> Julio A. Roca 2420 (B7602GUX) - Mar del Plata
-            <br /> R. Escalada de San Martín 2749 OF. 275 (C1406HCC) - CABA <br />
+            <br /> R. Escalada de San Martín 2749 OF. 275 (C1406HCC) - CABA{" "}
+            <br />
             Teléfonos:
             <br /> M: +549 223 3045424
             <br /> M: +549 11 2468.2389

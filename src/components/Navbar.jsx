@@ -32,7 +32,14 @@ const Navbar = () => {
           <div className="flex items-center flex-shrink-0">
             <img className="h-20 w-20 mr-2" src={logo} alt="logoalma" />
           </div>
-          <ul className="hidden lg:flex ml-14 space-x-12 text-white">
+          <ul
+            className="hidden lg:flex ml-14 space-x-12 text-white"
+            style={{
+              fontSize: "0.6rem",
+              letterSpacing: "2px",
+              fontWeight: 300,
+            }}
+          >
             {navItems.map((item, index) => (
               <li key={index}>
                 <a href={item.href}>{item.label}</a>
@@ -40,7 +47,7 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="hidden lg:flex justify-center space-x-12 items-center">
-            <ul className="hidden lg:flex ml-14 space-x-12">
+            <ul className="hidden lg:flex ml-14 space-x-4">
               {socialMedia.map((social, index) => (
                 <img
                   key={social.id}
@@ -62,7 +69,14 @@ const Navbar = () => {
         </div>
         {mobileDrawerOpen && (
           <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
-            <ul className="text-white">
+            <ul
+              className="text-white"
+              style={{
+                fontSize: "0.6rem",
+                letterSpacing: "2px",
+                fontWeight: 300,
+              }}
+            >
               {navItems.map((item, index) => (
                 <li key={index} className="py-4">
                   <a href={item.href}>{item.label}</a>

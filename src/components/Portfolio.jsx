@@ -15,7 +15,7 @@ export default function Portfolio() {
   return (
     <>
       <div className="mt-8 flex flex-col justify-between items-center w-screen">
-        <h2 className="mt-8 font-semibold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
+        <h2 className="mt-8 font-bold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
           PORTFOLIO
         </h2>
       </div>

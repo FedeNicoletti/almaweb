@@ -10,7 +10,12 @@ const FeatureCard = ({ icon, title, content }) => (
       />
     </div>
     <div className="flex flex-col items-center">
-      <h4 className="font-semibold text-lg md:text-xl mb-2">{title}</h4>
+      <h4
+        className="font-semibold text-base md:text-xl mb-2"
+        style={{ fontSize: "1rem", letterSpacing: "1px" }}
+      >
+        {title}
+      </h4>
       <p className="text-center font-normal text-base md:text-lg">{content}</p>
     </div>
   </div>
@@ -19,10 +24,10 @@ const FeatureCard = ({ icon, title, content }) => (
 const Agencia = () => (
   <section id="features" className="mt-8 md:mt-24 flex flex-col items-center">
     <div className="max-w-xl mt-5 text-center">
-      <h2 className="font-semibold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
+      <h2 className="font-semibold text-2xl md:text-3xl mb-8 tracking-widest text-[#303030]">
         AGENCIA
       </h2>
-      <p className="text-base md:text-lg text-[#595959]">
+      <p className="text-0.9rem md:text-lg text-[#595959]">
         Somos una agencia con más de 20 años desarrollando soluciones
         comerciales y creativas para todo tipo de empresas y eventos en
         Argentina. Un equipo multidisciplinario compuesto por licenciados en

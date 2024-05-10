@@ -55,13 +55,13 @@ export default function Clients() {
 
   return (
     <div className="w-screen mt-24 text-center">
-      <h2 className="font-semibold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
+      <h2 className="font-bold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
         PARTNERS
       </h2>
       <Slider {...settings} style={{ pointerEvents: "none" }}>
         {imagenes.map((imagen, index) => (
           <div key={index}>
-            <img src={imagen.src} alt={imagen.alt}/>
+            <img src={imagen.src} alt={imagen.alt} />
           </div>
         ))}
       </Slider>

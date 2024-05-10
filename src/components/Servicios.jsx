@@ -2,7 +2,7 @@ import { featuresServicios } from "../constants";
 
 const FeatureCard = ({ icon, title, content }) => (
   <div className="flex flex-col items-center p-4 md:p-6 rounded-lg mb-6 md:mb-0 md:mr-6 feature-card">
-    <div className="w-32 h-32 md:w-48 md:h-48 rounded-full flex items-center justify-center mb-4 md:mb-6">
+    <div className="w-32 h-32 md:w-48 md:h-48 rounded-full flex items-center justify-center mb-2">
       <img
         src={icon}
         alt="iconos"
@@ -10,7 +10,10 @@ const FeatureCard = ({ icon, title, content }) => (
       />
     </div>
     <div className="flex flex-col items-center">
-      <h4 className="font-semibold text-lg text-center md:text-xl mb-2 text-[#303030]">
+      <h4
+        className="font-semibold text-center md:text-xl mb-2 text-[#303030]"
+        style={{ fontSize: "0.7rem" }}
+      >
         {title}
       </h4>
       <p className="text-center font-normal text-base md:text-lg text-[#595959]">
@@ -23,7 +26,7 @@ const FeatureCard = ({ icon, title, content }) => (
 const Servicios = () => (
   <section id="features" className="mt-8 md:mt-24 flex flex-col items-center">
     <div className="max-w-xl mt-5 text-center">
-      <h2 className="font-semibold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
+      <h2 className="font-bold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
         SERVICIOS
       </h2>
     </div>
