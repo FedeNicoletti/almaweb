@@ -40,15 +40,15 @@ import instagram from "./instagram.svg";
 import imagetest from "./imagetest.jpeg";
 import imagetest01 from "./imagetest01.jpeg";
 import imagetest02 from "./imagetest02.jpeg";
-import bombilla from "./bombilla.png";
-import rompecabezas from "./rompecabezas.png";
-import tiempo from "./tiempo.png";
-import inventario from "./inventario.png";
-import mano from "./mano.png";
-import comunicacion from "./comunicacion.png";
-import bosquejo from "./bosquejo.png";
-import discurso from "./discurso.png";
-import etiqueta from "./etiqueta.png";
+import bombilla from "./bombilla.svg";
+import rompecabezas from "./rompecabezas.svg";
+import tiempo from "./tiempo.svg";
+import inventario from "./inventario.svg";
+import mano from "./mano.svg";
+import comunicacion from "./comunicacion.svg";
+import bosquejo from "./bosquejo.svg";
+import discurso from "./discurso.svg";
+import etiqueta from "./etiqueta.svg";
 
 export {
   facebook,
