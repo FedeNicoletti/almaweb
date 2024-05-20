@@ -1,7 +1,4 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import {
   image31,
   image32,
@@ -23,48 +20,22 @@ export default function Clients() {
     { src: image37, alt: "Image 37" },
   ];
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 1000, // Ajusta la velocidad de transición
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500, // Ajusta la velocidad de reproducción automática
-    pauseOnHover: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1,
-        },
-      },
-    ],
-  };
-
   return (
     <div className="w-screen mt-24 text-center">
       <h2 className="font-bold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
         PARTNERS
       </h2>
-      <Slider {...settings} style={{ pointerEvents: "none" }}>
+      <div className="grid grid-cols-7 gap-4">
         {imagenes.map((imagen, index) => (
-          <div key={index}>
-            <img src={imagen.src} alt={imagen.alt} />
+          <div key={index} className="w-full">
+            <img
+              src={imagen.src}
+              alt={imagen.alt}
+              className="w-full h-full object-contain"
+            />
           </div>
         ))}
-      </Slider>
+      </div>
     </div>
   );
 }
