@@ -49,8 +49,10 @@ import comunicacion from "./comunicacion.svg";
 import bosquejo from "./bosquejo.svg";
 import discurso from "./discurso.svg";
 import etiqueta from "./etiqueta.svg";
+import logo from "./logo.svg";
 
 export {
+  logo,
   facebook,
   instagram,
   imagetest,
