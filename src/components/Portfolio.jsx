@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 export default function Portfolio() {
   const [filtro, setFiltro] = useState("Todos");
@@ -7,9 +7,94 @@ export default function Portfolio() {
     setFiltro(filtro);
   };
 
+  const [hoveredImage, setHoveredImage] = useState(null);
+
+  const handleMouseEnter = (index) => {
+    setHoveredImage(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredImage(null);
+  };
+
+  const imagenes = [
+    {
+      id: 1,
+      alt: "Imagen 1",
+      src: "https://via.placeholder.com/300",
+      categoria: "Arquitectura y Diseño Comercial",
+    },
+    {
+      id: 2,
+      alt: "Imagen 2",
+      src: "https://via.placeholder.com/300",
+      categoria: "Arquitectura y Diseño Comercial",
+    },
+    {
+      id: 3,
+      alt: "Imagen 3",
+      src: "https://via.placeholder.com/300",
+      categoria: "Acciones BTL y Eventos",
+    },
+    {
+      id: 4,
+      alt: "Imagen 4",
+      src: "https://via.placeholder.com/300",
+      categoria: "Acciones BTL y Eventos",
+    },
+    {
+      id: 5,
+      alt: "Imagen 5",
+      src: "https://via.placeholder.com/300",
+      categoria: "Trade Marketing",
+    },
+    {
+      id: 6,
+      alt: "Imagen 6",
+      src: "https://via.placeholder.com/300",
+      categoria: "Trade Marketing",
+    },
+    {
+      id: 7,
+      alt: "Imagen 7",
+      src: "https://via.placeholder.com/300",
+      categoria: "Producción y Logística",
+    },
+    {
+      id: 8,
+      alt: "Imagen 8",
+      src: "https://via.placeholder.com/300",
+      categoria: "Producción y Logística",
+    },
+    {
+      id: 9,
+      alt: "Imagen 9",
+      src: "https://via.placeholder.com/300",
+      categoria: "Recursos Humanos",
+    },
+    {
+      id: 10,
+      alt: "Imagen 10",
+      src: "https://via.placeholder.com/300",
+      categoria: "Recursos Humanos",
+    },
+    {
+      id: 11,
+      alt: "Imagen 11",
+      src: "https://via.placeholder.com/300",
+      categoria: "Recursos Humanos",
+    },
+    {
+      id: 12,
+      alt: "Imagen 12",
+      src: "https://via.placeholder.com/300",
+      categoria: "Recursos Humanos",
+    },
+  ];
+
   const filtrarImagenes = (imagen) => {
     if (filtro === "Todos") return true;
-    return imagen.alt.includes(filtro);
+    return imagen.categoria === filtro;
   };
 
   return (
@@ -79,72 +164,32 @@ export default function Portfolio() {
           </button>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
-          {imagenes.map(
-            (imagen, index) =>
-              filtrarImagenes(imagen) && (
-                <div key={index} className="aspect-w-4 aspect-h-3">
-                  <img
-                    alt={imagen.alt}
-                    className="object-cover w-full h-full"
-                    src={imagen.src}
-                  />
+          {imagenes.map((imagen, index) => (
+            <div
+              key={index}
+              className="aspect-w-4 aspect-h-3 relative"
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
+              style={{ display: filtrarImagenes(imagen) ? "block" : "none" }}
+            >
+              <img
+                alt={imagen.alt}
+                className="object-cover w-full h-full"
+                src={imagen.src}
+              />
+
+              {hoveredImage === index && (
+                <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center text-white text-center">
+                  <div>
+                    <p className="font-bold">{imagen.alt}</p>
+                    <p className="text-sm">{imagen.categoria}</p>
+                  </div>
                 </div>
-              )
-          )}
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </>
   );
 }
-
-const imagenes = [
-  {
-    alt: "Arquitectura y Diseño Comercial",
-    src: "https://images.pexels.com/photos/21038400/pexels-photo-21038400/free-photo-of-caminante-solitario.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-  },
-  {
-    alt: "Acciones BTL y Eventos",
-    src: "https://images.pexels.com/photos/21038400/pexels-photo-21038400/free-photo-of-caminante-solitario.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-  },
-  {
-    alt: "Trade Marketing",
-    src: "https://images.pexels.com/photos/21038400/pexels-photo-21038400/free-photo-of-caminante-solitario.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-  },
-  {
-    alt: "Producción y Logistica",
-    src: "https://images.pexels.com/photos/21038400/pexels-photo-21038400/free-photo-of-caminante-solitario.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-  },
-  {
-    alt: "Recursos Humanos",
-    src: "https://images.pexels.com/photos/21038400/pexels-photo-21038400/free-photo-of-caminante-solitario.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-  },
-  {
-    alt: "Recursos Humanos",
-    src: "https://images.pexels.com/photos/21038400/pexels-photo-21038400/free-photo-of-caminante-solitario.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-  },
-  {
-    alt: "Recursos Humanos",
-    src: "https://images.pexels.com/photos/21038400/pexels-photo-21038400/free-photo-of-caminante-solitario.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-  },
-  {
-    alt: "Recursos Humanos",
-    src: "https://images.pexels.com/photos/21038400/pexels-photo-21038400/free-photo-of-caminante-solitario.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-  },
-  {
-    alt: "Producción y Logística",
-    src: "https://images.pexels.com/photos/21038400/pexels-photo-21038400/free-photo-of-caminante-solitario.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-  },
-  {
-    alt: "Recursos Humanos",
-    src: "https://images.pexels.com/photos/21038400/pexels-photo-21038400/free-photo-of-caminante-solitario.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-  },
-  {
-    alt: "Producción y Logística",
-    src: "https://images.pexels.com/photos/21038400/pexels-photo-21038400/free-photo-of-caminante-solitario.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-  },
-  {
-    alt: "Recursos Humanos",
-    src: "https://images.pexels.com/photos/21038400/pexels-photo-21038400/free-photo-of-caminante-solitario.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-  },
-  // Agrega más imágenes con sus respectivos atributos alt y src
-];
