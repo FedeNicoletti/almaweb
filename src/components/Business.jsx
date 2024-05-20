@@ -9,7 +9,7 @@ const Business = () => (
           className="font-montserrat text-[#131d26] font-semibold xs:text-[46px] text-[32px] xs:leading-[76.8px] leading-[66.8px] w-full"
           style={{ color: "#A2B2CB" }}
         >
-          SOMOS PROFESIONALES AL SERVICIO DE PROFESIONALES
+          <b>SOMOS PROFESIONALES</b> AL SERVICIO DE <b>PROFESIONALES</b>
         </h2>
       </div>
     </div>

@@ -9,7 +9,7 @@ const Business = () => (
           className="font-montserrat text-[#131d26] font-semibold xs:text-[46px] text-[32px] xs:leading-[76.8px] leading-[66.8px] w-full"
           style={{ color: "#A2B2CB" }}
         >
-          ESTAMOS PREPARADOS PARA LO QUE SU EMPRESA NECESITE
+          <b>ESTAMOS PREPARADOS</b> PARA LO QUE SU <b>EMPRESA NECESITE</b>
         </h2>
       </div>
     </div>
