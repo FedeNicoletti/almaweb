@@ -33,7 +33,6 @@ import image32 from "./image32.webp";
 import image33 from "./image33.webp";
 import image34 from "./image34.webp";
 import image35 from "./image35.webp";
-import image36 from "./image36.webp";
 import image37 from "./image37.webp";
 
 import facebook from "./facebook.svg";
@@ -101,6 +100,5 @@ export {
   image33,
   image34,
   image35,
-  image36,
   image37,
 };
