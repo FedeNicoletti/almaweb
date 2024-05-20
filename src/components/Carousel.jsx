@@ -35,8 +35,8 @@ const Carousel = ({ children: sliderImages }) => {
           {sliderImages.map((_, i) => (
             <div
               key={i}
-              className={`transition-all w-3 h-3 bg-white rounded-full ${
-                curr === i ? "p-2" : "bg-opacity-50"
+              className={`transition-all w-7 h-1 bg-white rounded-full ${
+                curr === i ? "p-1" : "bg-opacity-50"
               }`}
             ></div>
           ))}
