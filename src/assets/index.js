@@ -46,9 +46,9 @@ import tiempo from "./tiempo.svg";
 import inventario from "./inventario.svg";
 import mano from "./mano.svg";
 import comunicacion from "./comunicacion.svg";
-import bosquejo from "./bosquejo.svg";
-import discurso from "./discurso.svg";
-import etiqueta from "./etiqueta.svg";
+import bosquejo from "./bosquejo.png";
+import discurso from "./discurso.png";
+import etiqueta from "./etiqueta.png";
 import logo from "./logo.svg";
 
 export {
