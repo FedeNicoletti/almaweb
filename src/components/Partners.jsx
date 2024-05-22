@@ -19,7 +19,7 @@ export default function Clients() {
   ];
 
   return (
-    <div className="w-screen mt-24 text-center">
+    <div className="w-screen mt-24 text-center mb-24">
       <h2 className="font-bold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
         PARTNERS
       </h2>
@@ -29,7 +29,7 @@ export default function Clients() {
             <img
               src={imagen.src}
               alt={imagen.alt}
-              className="w-full h-full object-contain"
+              className="w-full h-36 object-contain"
             />
           </div>
         ))}

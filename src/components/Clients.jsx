@@ -70,13 +70,13 @@ export default function Clients() {
       <h2 className="font-bold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
         CLIENTES
       </h2>
-      <div className="grid grid-cols-6 grid-rows-5 gap-4">
+      <div className="grid grid-cols-6 grid-rows-5">
         {imagenes.map((imagen, index) => (
           <div key={index} className="w-full">
             <img
               src={imagen.src}
               alt={imagen.alt}
-              className="w-full h-full object-contain"
+              className="w h-36 object-center"
             />
           </div>
         ))}

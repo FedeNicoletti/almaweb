@@ -112,7 +112,7 @@ export default function Portfolio() {
             }`}
             onClick={() => handleClick("Todos")}
           >
-            <p className="text-base md:text-lg">Todos</p>
+            <p className="text-base md:text-lg">TODOS</p>
           </button>
           <button
             className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
@@ -122,9 +122,15 @@ export default function Portfolio() {
             }`}
             onClick={() => handleClick("Arquitectura y Diseño Comercial")}
           >
-            <p className="text-base md:text-lg">
-              Arquitectura y Diseño Comercial
-            </p>
+            <p className="text-base md:text-lg">ARQ Y DISEÑO</p>
+          </button>
+          <button
+            className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
+              filtro === "Marketing Digital" ? "text-pink-500" : "text-gray-600"
+            }`}
+            onClick={() => handleClick("Marketing Digital")}
+          >
+            <p className="text-base md:text-lg">MKT DIGITAL</p>
           </button>
           <button
             className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
@@ -134,7 +140,7 @@ export default function Portfolio() {
             }`}
             onClick={() => handleClick("Acciones BTL y Eventos")}
           >
-            <p className="text-base md:text-lg">Acciones BTL y Eventos</p>
+            <p className="text-base md:text-lg">BTL Y EVENTOS</p>
           </button>
           <button
             className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
@@ -142,7 +148,7 @@ export default function Portfolio() {
             }`}
             onClick={() => handleClick("Trade Marketing")}
           >
-            <p className="text-base md:text-lg">Trade Marketing</p>
+            <p className="text-base md:text-lg">TRADE MKT</p>
           </button>
           <button
             className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
@@ -152,7 +158,7 @@ export default function Portfolio() {
             }`}
             onClick={() => handleClick("Producción y Logística")}
           >
-            <p className="text-base md:text-lg">Producción y Logística</p>
+            <p className="text-base md:text-lg">PRODUCCIÓN Y LOGÍSTICA</p>
           </button>
           <button
             className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
@@ -160,7 +166,7 @@ export default function Portfolio() {
             }`}
             onClick={() => handleClick("Recursos Humanos")}
           >
-            <p className="text-base md:text-lg">Recursos Humanos</p>
+            <p className="text-base md:text-lg">RR HH</p>
           </button>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">

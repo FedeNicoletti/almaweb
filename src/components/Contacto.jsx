@@ -43,24 +43,31 @@ const Contacto = () => {
   return (
     <div className="w-full flex flex-col justify-center">
       <div className="w-full flex justify-center mt-5 text-center">
-        <h2 className="font-bold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
+        <h2 className="font-bold text-2xl md:text-3xl tracking-widest text-[#303030]">
           CONTACTO
         </h2>
       </div>
       <section
         id="features"
-        className="w-screen mt-8 md:mt-24 flex flex-col md:flex-row items-center"
+        className="w-screen mt-8 md:mt-12 flex flex-col md:flex-row items-start md:items-center"
       >
         <div className="w-full md:w-1/2 flex justify-center items-center py-8">
-          <p className="text-center md:text-lg">
+          <p className="ml-12 text-start md:text-lg">
             Completá el siguiente formulario y dejanos tu consulta. En breve nos
-            comunicaremos con vos. <br /> Nuestra Agencia:
+            comunicaremos con vos. <br />
+            <br />
+            <br />
+            <br />
+            <b> DATOS OFICINAS:</b>
             <br /> Julio A. Roca 2420 (B7602GUX) - Mar del Plata
             <br /> R. Escalada de San Martín 2749 OF. 275 (C1406HCC) - CABA{" "}
             <br />
-            Teléfonos:
-            <br /> M: +549 223 3045424
-            <br /> M: +549 11 2468.2389
+            <b>TELÉFONOS:</b>
+            <br /> +54 9223 3045424
+            <br /> +54 911 2468.2389
+            <br />
+            <b>EMAIL:</b>
+            <br /> info@almabtl.com
           </p>
         </div>
         <div className="w-full md:w-1/2 p-8">
