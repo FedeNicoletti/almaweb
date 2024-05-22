@@ -2,8 +2,6 @@ import {
   facebook,
   instagram,
   imagetest,
-  imagetest01,
-  imagetest02,
   bombilla,
   rompecabezas,
   tiempo,
@@ -37,11 +35,7 @@ export const socialMedia = [
   },
 ];
 
-export const sliderImages = [
-  { img: imagetest },
-  { img: imagetest01 },
-  { img: imagetest02 },
-];
+export const sliderImages = [{ img: imagetest }];
 
 export const features = [
   {

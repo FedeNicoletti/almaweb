@@ -37,9 +37,7 @@ import image37 from "./image37.webp";
 
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
-import imagetest from "./imagetest.jpeg";
-import imagetest01 from "./imagetest01.jpeg";
-import imagetest02 from "./imagetest02.jpeg";
+import imagetest from "./imagetest.png";
 import bombilla from "./bombilla.svg";
 import rompecabezas from "./rompecabezas.svg";
 import tiempo from "./tiempo.svg";
@@ -56,8 +54,6 @@ export {
   facebook,
   instagram,
   imagetest,
-  imagetest01,
-  imagetest02,
   bombilla,
   rompecabezas,
   tiempo,
