@@ -49,7 +49,7 @@ import comunicacion from "./comunicacion.svg";
 import bosquejo from "./bosquejo.png";
 import discurso from "./discurso.png";
 import etiqueta from "./etiqueta.png";
-import logo from "./logo.svg";
+import logo from "./logo.png";
 
 export {
   logo,
