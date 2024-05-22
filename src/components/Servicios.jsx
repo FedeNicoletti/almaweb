@@ -1,8 +1,8 @@
 import { featuresServicios } from "../constants";
 
 const FeatureCard = ({ icon, title, content }) => (
-  <div className="flex flex-col items-center p-4 md:p-6 rounded-lg mb-6 md:mb-0 md:mr-6 feature-card">
-    <div className="w-32 h-32 md:w-48 md:h-48 rounded-full flex items-center justify-center mb-2">
+  <div className="flex flex-col items-center p-4 md:p-6 rounded-lg md:mb-0 md:mr-6 feature-card">
+    <div className="w-32 h-32 md:w-48 md:h-48 flex items-center justify-center">
       <img
         src={icon}
         alt="iconos"
@@ -11,7 +11,7 @@ const FeatureCard = ({ icon, title, content }) => (
     </div>
     <div className="flex flex-col items-center">
       <h4
-        className="font-semibold text-center md:text-xl mb-2 text-[#303030]"
+        className="font-bold text-center md:text-xl mb-2 text-[#303030]"
         style={{ fontSize: "0.7rem" }}
       >
         {title}

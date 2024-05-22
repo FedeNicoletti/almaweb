@@ -3,7 +3,7 @@ import { pelotitas } from "../assets";
 const Business = () => (
   <section
     id="features"
-    className="w-screen mt-36 relative h-96 flex items-center justify-center overflow-hidden rotate-180"
+    className="w-screen mt-36 relative h-96 flex items-center justify-center overflow-hidden rotate-180 mb-36"
     style={{
       backgroundImage: `url(${pelotitas})`,
       backgroundSize: "cover",
