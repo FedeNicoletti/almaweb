@@ -2,7 +2,7 @@ import { features } from "../constants";
 
 const FeatureCard = ({ icon, title, content }) => (
   <div className="flex flex-col items-center p-4 md:p-6 rounded-lg mb-6 md:mb-0 md:mr-6 feature-card">
-    <div className="w-20 h-20 md:w-32 md:h-32 rounded-full flex items-center justify-center">
+    <div className="w-20 h-20 md:w-32 md:h-32 flex items-center justify-center">
       <img
         src={icon}
         alt="star"
@@ -11,7 +11,7 @@ const FeatureCard = ({ icon, title, content }) => (
     </div>
     <div className="flex flex-col items-center">
       <h4
-        className="font-semibold text-base md:text-xl mb-2"
+        className="font-semibold text-base md:text-xl"
         style={{ fontSize: "1rem", letterSpacing: "1px" }}
       >
         {title}
@@ -23,10 +23,13 @@ const FeatureCard = ({ icon, title, content }) => (
 
 const Agencia = () => (
   <section id="features" className="mt-8 md:mt-24 flex flex-col items-center">
-    <div className="flex flex-col md:flex-row items-center md:items-start md:justify-between w-full max-w-6xl px-4 md:px-8">
+    <div className="flex flex-col md:flex-row items-center md:items-start md:justify-between w-full max-w-6xl px-2 md:px-8">
       <div className="md:w-1/2 mt-5 text-center md:text-left mb-8 md:mb-0">
         <h2 className="font-semibold text-2xl md:text-3xl mb-8 tracking-widest text-[#303030]">
           AGENCIA
+        </h2>
+        <h2 className="font-normal text-2xl md:text-3xl mb-8 tracking-widest text-[#303030]">
+          ¿QUIÉNES SOMOS?
         </h2>
         <p className="text-sm md:text-lg text-[#595959]">
           <span style={{ display: "block", marginBottom: "1.5rem" }}>

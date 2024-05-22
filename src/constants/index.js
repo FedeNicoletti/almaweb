@@ -41,20 +41,20 @@ export const features = [
   {
     id: "feature-1",
     icon: bombilla,
-    title: "Somos creativos",
+    title: "SOMOS CREATIVOS",
     content:
       "Vivimos en una evolución constante que también nos hace versátiles y sumamente adaptables",
   },
   {
     id: "feature-2",
     icon: rompecabezas,
-    title: "Somos versátiles",
+    title: "SOMOS VERSÁTILES",
     content: "No entendemos límites o problemas: Siempre existe una solución",
   },
   {
     id: "feature-3",
     icon: tiempo,
-    title: "Somos profesionales",
+    title: "SOMOS PROFESIONALES",
     content: "Respondemos ante todas las necesidades con velocidad y precisión",
   },
 ];

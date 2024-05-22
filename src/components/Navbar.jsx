@@ -33,7 +33,7 @@ const Navbar = () => {
             <img className="h-20 w-20 mr-2" src={logo} alt="logoalma" />
           </div>
           <ul
-            className="hidden lg:flex ml-14 space-x-12 text-white"
+            className="hidden lg:flex ml-14 space-x-12 text-white "
             style={{
               fontSize: "0.6rem",
               letterSpacing: "2px",
