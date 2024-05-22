@@ -1,15 +1,20 @@
+import { pelotitas } from "../assets";
+
 const Business = () => (
   <section
     id="features"
-    className="w-screen mt-24 relative min-h-72 flex items-center justify-center"
+    className="w-screen mt-36 relative h-96 flex items-center justify-center overflow-hidden rotate-180"
+    style={{
+      backgroundImage: `url(${pelotitas})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}
   >
-    <div className="absolute inset-0 flex items-center justify-center">
+    <div className="absolute inset-0 flex items-start justify-center">
       <div className="text-center">
-        <h2
-          className="font-montserrat text-[#131d26] font-semibold xs:text-[46px] text-[32px] xs:leading-[76.8px] leading-[66.8px] w-full"
-          style={{ color: "#A2B2CB" }}
-        >
-          <b>ESTAMOS PREPARADOS</b> PARA LO QUE SU <b>EMPRESA NECESITE</b>
+        <h2 className="top-0 font-montserrat text-black font-normal xs:text-[46px] text-[56px] xs:leading-[86.8px] leading-[76.8px] w-full rotate-180">
+          <b>ESTAMOS PREPARADOS</b> <br /> PARA LO QUE SU{" "}
+          <b>EMPRESA NECESITE</b>
         </h2>
       </div>
     </div>
