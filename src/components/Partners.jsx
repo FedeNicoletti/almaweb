@@ -19,11 +19,13 @@ export default function Clients() {
   ];
 
   return (
-    <div className="w-screen mt-24 text-center mb-24">
-      <h2 className="font-bold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
-        PARTNERS
-      </h2>
-      <div className="grid grid-cols-6 gap-4">
+    <>
+      <div className="w-screen mt-24 text-center mb-12 md:ml-56 md:text-start">
+        <h2 className="font-bold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
+          PARTNERS
+        </h2>
+      </div>
+      <div className="grid grid-cols-6 mb-24">
         {imagenes.map((imagen, index) => (
           <div key={index} className="w-full">
             <img
@@ -34,6 +36,6 @@ export default function Clients() {
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 }

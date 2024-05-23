@@ -24,17 +24,30 @@ const FeatureCard = ({ icon, title, content }) => (
 );
 
 const Servicios = () => (
-  <section id="features" className="mt-8 md:mt-24 flex flex-col items-center">
-    <div className="max-w-xl mt-5 text-center">
+  <section id="features" className="mt-8 md:mt-24 flex flex-col items-start">
+    <div className="max-w-xl mt-5 text-center md:ml-56 md:text-start">
       <h2 className="font-bold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
         SERVICIOS
       </h2>
+      <h2 className="font-normal text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
+        ¿QUÉ Y CÓMO LO HACEMOS?
+      </h2>
+      <p className="text-sm md:text-lg text-[#595959]">
+        Nuestra motivación es encontrar una idea que transforme, que contagie
+        sensaciones. Resolvemos todos los problemas de forma creativa y eficaz.
+        <br />
+        Disfrutamos de vincularnos con nuestros clientes: somos el brazo
+        ejecutor y creativo que tu empresa necesita. Todos los proyectos son
+        bienvenidos: chicos, medianos, grandes, y ¡desde cualquier lugar del
+        país!
+      </p>
     </div>
-
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:max-w-6xl">
-      {featuresServicios.map((feature, index) => (
-        <FeatureCard key={feature.id} {...feature} />
-      ))}
+    <div className="flex justify-center items-center w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:max-w-6xl">
+        {featuresServicios.map((feature, index) => (
+          <FeatureCard key={feature.id} {...feature} />
+        ))}
+      </div>
     </div>
   </section>
 );

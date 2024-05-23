@@ -66,21 +66,27 @@ export default function Clients() {
   ];
 
   return (
-    <div className="w-screen mt-24 text-center">
-      <h2 className="font-bold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
-        CLIENTES
-      </h2>
-      <div className="grid grid-cols-6 grid-rows-5">
-        {imagenes.map((imagen, index) => (
-          <div key={index} className="w-full">
-            <img
-              src={imagen.src}
-              alt={imagen.alt}
-              className="w h-36 object-center"
-            />
-          </div>
-        ))}
+    <>
+      {" "}
+      <div className="w-screen mt-24 text-center md:ml-56 md:text-start">
+        <h2 className="font-bold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
+          CLIENTES
+        </h2>
       </div>
-    </div>
+      <div className="flex place-content-center">
+        {" "}
+        <div className=" grid grid-cols-6 grid-rows-5 gap-x-16">
+          {imagenes.map((imagen, index) => (
+            <div key={index} className="w-full">
+              <img
+                src={imagen.src}
+                alt={imagen.alt}
+                className="w h-36 object-center"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
   );
 }
