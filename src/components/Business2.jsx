@@ -11,9 +11,9 @@ const Business = () => (
     <div className="absolute inset-0 bg-black opacity-50"></div>
 
     <div className="absolute inset-0 flex items-center justify-center">
-      <div className="text-center">
+      <div className="text-center px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
         <h2
-          className="font-montserrat text-[#131d26] font-semibold xs:text-[46px] text-[32px] xs:leading-[76.8px] leading-[66.8px] w-full"
+          className="font-montserrat text-[#131d26] font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight sm:leading-snug md:leading-normal w-full"
           style={{ color: "#A2B2CB" }}
         >
           ¿ESTÁS LISTO PARA EMBARCARTE CON NOSOTROS?
