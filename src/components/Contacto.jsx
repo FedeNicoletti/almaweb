@@ -52,7 +52,7 @@ const Contacto = () => {
         className="w-screen mt-8 md:mt-12 flex flex-col md:flex-row items-start md:items-center"
       >
         <div className="w-full md:w-1/2 flex justify-center items-center py-8">
-          <p className="ml-12 text-start md:text-lg">
+          <p className="ml-4 md:ml-12 text-start md:text-lg">
             Completá el siguiente formulario y dejanos tu consulta. En breve nos
             comunicaremos con vos. <br />
             <br />

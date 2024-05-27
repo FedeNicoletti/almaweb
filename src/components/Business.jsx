@@ -11,8 +11,8 @@ const Business = () => (
     }}
   >
     <div className="absolute inset-0 flex items-start justify-center">
-      <div className="text-center">
-        <h2 className="top-0 font-montserrat text-black font-normal xs:text-[46px] text-[56px] xs:leading-[86.8px] leading-[76.8px] w-full">
+      <div className="text-center px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
+        <h2 className="top-0 font-montserrat text-black font-normal text-4xl sm:text-5xl md:text-6xl leading-tight sm:leading-snug md:leading-normal w-full">
           <b>SOMOS PROFESIONALES</b> <br /> AL SERVICIO DE <b>PROFESIONALES</b>
         </h2>
       </div>

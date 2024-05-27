@@ -14,7 +14,6 @@ export default function Clients() {
     { src: image33, alt: "Image 33" },
     { src: image34, alt: "Image 34" },
     { src: image35, alt: "Image 35" },
-
     { src: image37, alt: "Image 37" },
   ];
 
@@ -25,16 +24,18 @@ export default function Clients() {
           PARTNERS
         </h2>
       </div>
-      <div className="grid grid-cols-6 mb-24">
-        {imagenes.map((imagen, index) => (
-          <div key={index} className="w-full">
-            <img
-              src={imagen.src}
-              alt={imagen.alt}
-              className="w-full h-36 object-contain"
-            />
-          </div>
-        ))}
+      <div className="flex justify-center">
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 mb-24">
+          {imagenes.map((imagen, index) => (
+            <div key={index} className="w-full p-2">
+              <img
+                src={imagen.src}
+                alt={imagen.alt}
+                className="w-full h-auto object-contain"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
