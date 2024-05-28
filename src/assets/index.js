@@ -48,10 +48,12 @@ import bosquejo from "./bosquejo.png";
 import discurso from "./discurso.png";
 import etiqueta from "./etiqueta.png";
 import logo from "./logo.png";
+import pelotitassvg from "./pelotitas.svg";
 import pelotitas from "./pelotitas.png";
 
 export {
   pelotitas,
+  pelotitassvg,
   logo,
   facebook,
   instagram,

@@ -32,22 +32,40 @@ const Agencia = () => (
           ¿QUIÉNES SOMOS?
         </h2>
         <p className="text-sm md:text-lg text-[#595959]">
-          <span style={{ display: "block", marginBottom: "1.5rem" }}>
+          <span
+            style={{
+              display: "block",
+              marginBottom: "1.5rem",
+              fontSize: "18px",
+            }}
+          >
             Somos una agencia con más de 20 años desarrollando soluciones
             comerciales y creativas para todo tipo de empresas y eventos en
             Argentina.
           </span>
-          <span style={{ display: "block", marginBottom: "1.5rem" }}>
+          <span
+            style={{
+              display: "block",
+              marginBottom: "1.5rem",
+              fontSize: "18px",
+            }}
+          >
             Un equipo multidisciplinario compuesto por licenciados en marketing
             y administración, diseñadores gráficos e industriales, fotógrafos y
             filmmakers, entre otros.
           </span>
-          <span style={{ display: "block", marginBottom: "1.5rem" }}>
+          <span
+            style={{
+              display: "block",
+              marginBottom: "1.5rem",
+              fontSize: "18px",
+            }}
+          >
             Vivimos en una evolución constante que también nos hace versátiles y
             sumamente adaptables. La innovación es parte de nuestro core
             business.
           </span>
-          <span style={{ display: "block" }}>
+          <span style={{ display: "block", fontSize: "18px" }}>
             No entendemos límites o problemas: Siempre existe una solución.
             Respondemos ante todas las necesidades con velocidad y precisión.
           </span>

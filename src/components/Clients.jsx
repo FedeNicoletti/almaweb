@@ -73,9 +73,9 @@ export default function Clients() {
         </h2>
       </div>
       <div className="flex justify-center">
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:p-16">
           {imagenes.map((imagen, index) => (
-            <div key={index} className="w-full p-2">
+            <div key={index} className="w-full p-4 md:p-12">
               <img
                 src={imagen.src}
                 alt={imagen.alt}
