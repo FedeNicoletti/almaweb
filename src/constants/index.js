@@ -11,27 +11,37 @@ import {
   bosquejo,
   discurso,
   etiqueta,
+  linkedin,
 } from "../assets";
 export const navItems = [
+  {
+    label: "AGENCIA",
+    href: "#",
+  },
   {
     label: "SERVICIOS",
     href: "#",
   },
   { label: "PORTFOLIO", href: "#" },
-  { label: "EQUIPO", href: "#" },
+  { label: "CLIENTES", href: "#" },
   { label: "CONTACTO", href: "#" },
 ];
 
 export const socialMedia = [
   {
     id: "social-media-1",
-    icon: instagram,
-    link: "https://www.instagram.com/",
+    icon: linkedin,
+    link: "https://www.linkedin.com/",
   },
   {
     id: "social-media-2",
     icon: facebook,
     link: "https://www.facebook.com/",
+  },
+  {
+    id: "social-media-3",
+    icon: instagram,
+    link: "https://www.instagram.com/",
   },
 ];
 

@@ -35,8 +35,9 @@ import image34 from "./image34.webp";
 import image35 from "./image35.webp";
 import image37 from "./image37.webp";
 
-import facebook from "./facebook.svg";
-import instagram from "./instagram.svg";
+import facebook from "./facebook.png";
+import instagram from "./instagram.png";
+import linkedin from "./linkedin.png";
 import imagetest from "./imagetest.png";
 import bombilla from "./bombilla.svg";
 import rompecabezas from "./rompecabezas.svg";
@@ -52,6 +53,7 @@ import pelotitassvg from "./pelotitas.svg";
 import pelotitas from "./pelotitas.png";
 
 export {
+  linkedin,
   pelotitas,
   pelotitassvg,
   logo,

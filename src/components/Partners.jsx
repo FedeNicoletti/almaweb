@@ -22,6 +22,9 @@ export default function Clients() {
       <div className="w-screen mt-24 text-center mb-12 md:ml-56 md:text-start">
         <h2 className="font-bold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
           PARTNERS
+          <h2 className="font-normal mt-3 text-2xl md:text-3xl tracking-widest text-[#303030]">
+            NUESTROS PARTNERS, ALIANZAS ESTRATÉGICAS
+          </h2>
         </h2>
       </div>
       <div className="flex justify-center">

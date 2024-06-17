@@ -12,10 +12,7 @@ const Business = () => (
 
     <div className="absolute inset-0 flex items-center justify-center">
       <div className="text-center px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
-        <h2
-          className="font-montserrat text-[#131d26] font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight sm:leading-snug md:leading-normal w-full"
-          style={{ color: "#A2B2CB" }}
-        >
+        <h2 className="font-montserrat text-white font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight sm:leading-snug md:leading-normal w-full">
           ¿ESTÁS LISTO PARA EMBARCARTE CON NOSOTROS?
         </h2>
       </div>

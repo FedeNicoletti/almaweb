@@ -71,6 +71,9 @@ export default function Clients() {
         <h2 className="font-bold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
           CLIENTES
         </h2>
+        <h2 className="font-normal text-2xl md:text-3xl tracking-widest text-[#303030]">
+          ESTAS EMPRESAS YA CONFIAN EN NOSOTROS.
+        </h2>
       </div>
       <div className="flex justify-center">
         <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:p-16">

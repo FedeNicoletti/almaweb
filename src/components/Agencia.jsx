@@ -33,6 +33,7 @@ const Agencia = () => (
         </h2>
         <p className="text-sm md:text-lg text-[#595959]">
           <span
+            className="font-bold"
             style={{
               display: "block",
               marginBottom: "1.5rem",
