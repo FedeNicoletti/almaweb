@@ -1,7 +1,13 @@
 import {
   facebook,
   instagram,
-  imagetest,
+  PORTADA1,
+  PORTADA2,
+  PORTADA3,
+  PORTADA4,
+  PORTADA5,
+  PORTADA6,
+  PORTADA7,
   bombilla,
   rompecabezas,
   tiempo,
@@ -45,7 +51,6 @@ export const socialMedia = [
   },
 ];
 
-export const sliderImages = [{ img: imagetest }];
 
 export const features = [
   {

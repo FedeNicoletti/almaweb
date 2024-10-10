@@ -34,6 +34,13 @@ import image33 from "./image33.webp";
 import image34 from "./image34.webp";
 import image35 from "./image35.webp";
 import image37 from "./image37.webp";
+import PORTADA1 from './PORTADA 1.png';
+import PORTADA2 from './PORTADA 2.png';
+import PORTADA3 from './PORTADA 3.png';
+import PORTADA4 from './PORTADA 4.png';
+import PORTADA5 from './PORTADA 5.png';
+import PORTADA6 from './PORTADA 6.png';
+import PORTADA7 from './PORTADA 7.png';
 
 import facebook from "./facebook.png";
 import instagram from "./instagram.png";
@@ -53,6 +60,13 @@ import pelotitassvg from "./pelotitas.svg";
 import pelotitas from "./pelotitas.png";
 
 export {
+ PORTADA1,
+ PORTADA2,
+ PORTADA3,
+ PORTADA4,
+ PORTADA5,
+ PORTADA6,
+ PORTADA7,
   linkedin,
   pelotitas,
   pelotitassvg,
