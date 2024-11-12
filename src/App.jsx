@@ -22,11 +22,22 @@ const App = () => {
     <img key={7} src={PORTADA7} alt="Portada 7" className="w-full h-full object-cover" />,
   ];
 
+  const texts = [
+    { line1: "EVENTOS", line2: "CORPORATIVOS", link: "#portfolio" },
+    { line1: "FERIAS &", line2: "CONGRESOS", link: "#portfolio" },
+    { line1: "FAMILY", line2: "DAY", link: "#portfolio" },
+    { line1: "MERCHANDISING &", line2: "REGALOS EMPRESARIALES", link: "#portfolio" },
+    { line1: "FOTOGRAFÍA &", line2: "FILMMAKERS", link: "#portfolio" },
+    { line1: "TRADE MKT &", line2: "LOGÍSTICA", link: "#portfolio" },
+  ];
+
+
+
   return (
     <div className="w-full overflow-hidden">
       <Navbar />
       <div className="w-screen max-h-screen">
-        <Carousel>{sliderImages}</Carousel> {/* Pasas sliderImages directamente */}
+        <Carousel sliderImages={sliderImages} texts={texts} />
       </div>
       <Agencia />
       <Business />

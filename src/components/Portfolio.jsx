@@ -100,70 +100,63 @@ export default function Portfolio() {
   return (
     <>
       <div className="mt-8 flex flex-col justify-between items-center w-screen">
-        <h2 className="mt-8 font-bold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
+        <h2 id="portfolio" className="mt-8 font-bold text-2xl md:text-3xl mb-4 md:mb-5 tracking-widest text-[#303030]">
           PORTFOLIO
         </h2>
       </div>
       <div className="w-screen mx-auto">
         <div className="flex flex-col md:flex-row justify-center mb-12">
           <button
-            className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
-              filtro === "Todos" ? "text-pink-500" : "text-gray-600"
-            }`}
+            className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${filtro === "Todos" ? "text-pink-500" : "text-gray-600"
+              }`}
             onClick={() => handleClick("Todos")}
           >
             <p className="text-base md:text-lg">TODOS</p>
           </button>
           <button
-            className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
-              filtro === "Arquitectura y Diseño Comercial"
-                ? "text-pink-500"
-                : "text-gray-600"
-            }`}
+            className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${filtro === "Arquitectura y Diseño Comercial"
+              ? "text-pink-500"
+              : "text-gray-600"
+              }`}
             onClick={() => handleClick("Arquitectura y Diseño Comercial")}
           >
             <p className="text-base md:text-lg">ARQ Y DISEÑO</p>
           </button>
           <button
-            className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
-              filtro === "Marketing Digital" ? "text-pink-500" : "text-gray-600"
-            }`}
+            className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${filtro === "Marketing Digital" ? "text-pink-500" : "text-gray-600"
+              }`}
             onClick={() => handleClick("Marketing Digital")}
           >
             <p className="text-base md:text-lg">MKT DIGITAL</p>
           </button>
           <button
-            className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
-              filtro === "Acciones BTL y Eventos"
-                ? "text-pink-500"
-                : "text-gray-600"
-            }`}
+            className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${filtro === "Acciones BTL y Eventos"
+              ? "text-pink-500"
+              : "text-gray-600"
+              }`}
             onClick={() => handleClick("Acciones BTL y Eventos")}
           >
             <p className="text-base md:text-lg">BTL Y EVENTOS</p>
           </button>
           <button
-            className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
-              filtro === "Trade Marketing" ? "text-pink-500" : "text-gray-600"
-            }`}
+            className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${filtro === "Trade Marketing" ? "text-pink-500" : "text-gray-600"
+              }`}
             onClick={() => handleClick("Trade Marketing")}
           >
             <p className="text-base md:text-lg">TRADE MKT</p>
           </button>
           <button
-            className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
-              filtro === "Producción y Logística"
-                ? "text-pink-500"
-                : "text-gray-600"
-            }`}
+            className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${filtro === "Producción y Logística"
+              ? "text-pink-500"
+              : "text-gray-600"
+              }`}
             onClick={() => handleClick("Producción y Logística")}
           >
             <p className="text-base md:text-lg">PRODUCCIÓN Y LOGÍSTICA</p>
           </button>
           <button
-            className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${
-              filtro === "Recursos Humanos" ? "text-pink-500" : "text-gray-600"
-            }`}
+            className={` rounded px-2 py-2 bg-transparent mb-2 md:mr-2 ${filtro === "Recursos Humanos" ? "text-pink-500" : "text-gray-600"
+              }`}
             onClick={() => handleClick("Recursos Humanos")}
           >
             <p className="text-base md:text-lg">RR HH</p>
